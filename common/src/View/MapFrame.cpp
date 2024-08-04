@@ -1027,7 +1027,7 @@ bool MapFrame::saveDocumentAs()
 
 void MapFrame::revertDocument()
 {
-  if (m_document->persistent() && confirmRevertDocument())
+  if (m_document->persistent())
   {
     const auto mapFormat = m_document->world()->mapFormat();
     const auto game = m_document->game();
